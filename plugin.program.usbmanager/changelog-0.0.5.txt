@@ -1,4 +1,7 @@
 
+[B]0.0.5[/B] (2016-11-25)
+- prepare for new skin
+
 [B]0.0.4[/B] (2016-11-08)
 - split auto mount and auto link
 
