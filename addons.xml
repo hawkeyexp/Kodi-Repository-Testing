@@ -136,7 +136,7 @@ Diese Addon verwendet pyDes von Todd Whiteman</disclaimer>
 	</extension>
 </addon>
 
-<addon id="service.nextup.notification" name="Nextup Service Notification" provider-name="im85288" version="1.0.39~beta120517~beta120517">
+<addon id="service.nextup.notification" name="Nextup Service Notification" provider-name="im85288" version="1.0.38~beta120517">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.addon.signals" version="0.0.1"/>
