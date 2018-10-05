@@ -72,7 +72,7 @@ v0.12.9 (2018-04-16)
 
 <addon id="plugin.video.amazon"
        name="Amazon"
-       version="1.9.8~beta09181451"
+       version="1.9.9~beta10052219"
        provider-name="Sandmann79 + BlueCop + Romans I XVI">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
