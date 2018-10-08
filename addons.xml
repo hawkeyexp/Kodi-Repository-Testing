@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.video.kodiconnect"
+       name="Kodi Connect"
+       version="0.1.22"
+       provider-name="Tomas Kislan">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <!-- <extension point="xbmc.python.script" library="default.py" /> -->
+  <extension point="xbmc.python.pluginsource" library="plugin.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Reverse proxy tunnel to the cloud</summary>
+    <description lang="en">Creates a connection with the cloud server, so that it can be controlled from anywhere</description>
+    <license>GPL 2.0</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=327562</forum>
+    <website></website>
+    <source>https://github.com/kodi-connect/kodi-connect-addon</source>
+    <email>kislan.tomas@gmail.com</email>
+  </extension>
+</addon>
+
 <addon id="plugin.video.netflix" name="Netflix" version="0.13.13~beta09181451" provider-name="libdev + jojo + asciidisco">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
