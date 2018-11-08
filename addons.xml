@@ -24,7 +24,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.netflix" name="Netflix" version="0.14.1~beta11062147" provider-name="libdev + jojo + asciidisco">
+<addon id="plugin.video.netflix" name="Netflix" version="0.14.1~beta11080456" provider-name="libdev + jojo + asciidisco">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.requests" version="2.12.4"/>
@@ -99,7 +99,7 @@ v0.12.9 (2018-04-16)
 
 <addon id="plugin.video.amazon"
        name="Amazon"
-       version="1.9.10~beta11021253"
+       version="1.9.10~beta11080456"
        provider-name="Sandmann79 + BlueCop + Romans I XVI">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
