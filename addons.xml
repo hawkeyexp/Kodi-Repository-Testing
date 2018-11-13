@@ -99,7 +99,7 @@ v0.12.9 (2018-04-16)
 
 <addon id="plugin.video.amazon"
        name="Amazon"
-       version="1.9.10~beta11080456"
+       version="2.0.1~beta11131029"
        provider-name="Sandmann79 + BlueCop + Romans I XVI">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
@@ -135,7 +135,7 @@ Diese Addon verwendet pyDes von Todd Whiteman</disclaimer>
   </extension>
 </addon>
 
-<addon id="service.nextup.notification" name="Nextup Service Notification" provider-name="im85288" version="1.0.38~beta05031507">
+<addon id="service.nextup.notification" name="Nextup Service Notification" provider-name="im85288" version="1.0.38~beta11131029">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.addon.signals" version="0.0.1"/>
