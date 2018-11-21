@@ -24,7 +24,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.netflix" name="Netflix" version="0.13.19~beta11190010" provider-name="libdev + jojo + asciidisco">
+<addon id="plugin.video.netflix" name="Netflix" version="0.14.1~beta11212215" provider-name="libdev + jojo + asciidisco">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.requests" version="2.12.4"/>
@@ -59,7 +59,7 @@
     <forum>https://www.kodinerds.net/index.php/Thread/55612-PreRelease-Plugin-Netflix-Inputstream/</forum>
     <source>https://github.com/asciidisco/plugin.video.netflix</source>
     <news>
-v0.13.19~beta11190010 (2018-11-17)
+v0.13.18 (2018-11-17)
 - Write correct codec into VP9 MPEG DAS profiles
 
 v0.13.17 (2018-11-16)
