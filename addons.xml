@@ -2,7 +2,7 @@
 <addons>
 <addon
     id="skin.eminence.2.mod"
-    version="3.0.5~beta12120642"
+    version="3.0.5~beta12122317"
     name="Eminence 2 MOD"
     provider-name="jurialmunkey - Mod by Guilouz - Mod by Alanon - Mod by hawkeyexp">
     <requires>
@@ -36,7 +36,7 @@
 		</assets>
 		<news> Changelog:
 
-		[B]3.0.5~beta12120642[/B]
+		[B]3.0.5~beta12122317[/B]
 		1. Skin Shortcuts menu fix.
 		2. Minor widget fixes.
 		3. Dialog Busy tweak.
