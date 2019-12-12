@@ -174,7 +174,7 @@ v0.15.10 (2019-11-17)
 
 <addon id="plugin.video.amazon"
        name="Amazon"
-       version="2.0.8~beta12041726"
+       version="2.0.9~beta12120621"
        provider-name="Sandmann79 + BlueCop + Romans I XVI">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
