@@ -2,7 +2,7 @@
 <addons>
 <addon
     id="skin.eminence.2.mod"
-    version="3.0.5~beta12132052"
+    version="3.0.5~beta12141001"
     name="Eminence 2 MOD"
     provider-name="jurialmunkey - Mod by Guilouz - Mod by Alanon - Mod by hawkeyexp">
     <requires>
@@ -36,7 +36,7 @@
 		</assets>
 		<news> Changelog:
 
-		[B]3.0.5~beta12132052[/B]
+		[B]3.0.5~beta12141001[/B]
 		1. Skin Shortcuts menu fix.
 		2. Minor widget fixes.
 		3. Dialog Busy tweak.
@@ -159,7 +159,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.netflix" name="Netflix" version="0.16.1~beta12062149" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
+<addon id="plugin.video.netflix" name="Netflix" version="0.16.1~beta12141001" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
   <requires>
     <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.addon.signals" version="0.0.3"/>
@@ -212,7 +212,7 @@
     <forum>https://forum.kodi.tv/showthread.php?tid=329767</forum>
     <source>https://github.com/CastagnaIT/plugin.video.netflix</source>
     <news>
-v0.16.1~beta12062149 (2019-11-29)
+v0.16.1~beta12141001 (2019-11-29)
 -Added new parental control settings
 -Added new thumb rating to movies/tv shows
 -Started migrating to watched status marks by profile
@@ -242,7 +242,7 @@ v0.15.10 (2019-11-17)
 
 <addon id="plugin.video.amazon"
        name="Amazon"
-       version="2.0.9~beta12120621"
+       version="2.0.9~beta12141001"
        provider-name="Sandmann79 + BlueCop + Romans I XVI">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
