@@ -2,7 +2,7 @@
 <addons>
 <addon
     id="skin.eminence.2.mod"
-    version="3.0.5~beta12221044"
+    version="3.0.5~beta12231044"
     name="Eminence 2 MOD"
     provider-name="jurialmunkey - Mod by Guilouz - Mod by Alanon - Mod by hawkeyexp">
     <requires>
@@ -36,7 +36,7 @@
 		</assets>
 		<news> Changelog:
 
-		[B]3.0.5~beta12221044[/B]
+		[B]3.0.5~beta12231044[/B]
 		1. Skin Shortcuts menu fix.
 		2. Minor widget fixes.
 		3. Dialog Busy tweak.
@@ -159,7 +159,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.netflix" name="Netflix" version="0.16.2~beta12221048" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
+<addon id="plugin.video.netflix" name="Netflix" version="0.16.2~beta12231044" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
   <requires>
     <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.addon.signals" version="0.0.3"/>
@@ -212,7 +212,7 @@
     <forum>https://forum.kodi.tv/showthread.php?tid=329767</forum>
     <source>https://github.com/CastagnaIT/plugin.video.netflix</source>
     <news>
-v0.16.2~beta12221048 (2019-12-14)
+v0.16.2~beta12231044 (2019-12-14)
 -Allowed to export individual seasons to the library (manual mode)
 -Dolby atmos audio streams are now specified (Kodi 19)
 -Added workaround to fix skin widgets
