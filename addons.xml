@@ -1,73 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon
-    id="skin.eminence.2.mod"
-    version="3.0.5~beta12231044"
-    name="Eminence 2 MOD"
-    provider-name="jurialmunkey - Mod by Guilouz - Mod by Alanon - Mod by hawkeyexp">
-    <requires>
-        <import addon="xbmc.gui" version="5.14.0"/>
-        <import addon="script.skinshortcuts" version="1.0.13"/>
-        <import addon="script.skin.helper.service" version="1.1.23"/>
-		<import addon="script.skin.helper.widgets" version="1.0.35"/>
-		<import addon="script.skin.helper.colorpicker" version="1.0.12"/>
-        <import addon="script.extendedinfo" version="5.0.0"/>
-        <import addon="script.image.resource.select" version="0.0.5"/>
-        <import addon="plugin.program.autocompletion" version="1.0.1"/>
-    </requires>
-    <extension point="xbmc.gui.skin" effectslowdown="1.00" debugging="false">
-        <res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Clean, clear, simple, modern.</summary>
-        <summary lang="fr">Clair, simple et moderne.</summary>
-        <description lang="en">Eminence is a skin that aims to be clean, clear, simple and modern.</description>
-        <description lang="fr">Eminence est un thème qui vise à être clair, simple et moderne.</description>
-		<assets>
-		 	<icon>icon.png</icon>
- 			<fanart>fanart.jpg</fanart>
-			<screenshot>extras/viewthumbs/56.jpg</screenshot>
- 			<screenshot>extras/viewthumbs/521.jpg</screenshot>
- 			<screenshot>extras/viewthumbs/600.jpg</screenshot>
- 			<screenshot>extras/viewthumbs/506.jpg</screenshot>
- 			<screenshot>extras/viewthumbs/52.jpg</screenshot>
- 			<screenshot>extras/viewthumbs/159.jpg</screenshot>
-		</assets>
-		<news> Changelog:
-
-		[B]3.0.5~beta12231044[/B]
-		1. Skin Shortcuts menu fix.
-		2. Minor widget fixes.
-		3. Dialog Busy tweak.
-
-		[B]3.0.3[/B]
-		1. GUI bump.
-		2. Tweaked vertical menu layout and size.
-		3. Added addon dependency button.
-		4. Removed Audio DSP related settings.
-		5. Tweaked startup video.
-		6. Premiere date tweaks.
-		7. PVR Recordings fix.
-
-		[B]3.0.2[/B]
-		1. Fixed weather animated icons.
-		2. Alphabet scrollbar fixes.
-		3. Reimplemented Netflix backend fonts.
-
-		[B]3.0.1[/B]
-		1. Small infoline corrections.
-		2. Removed a redundant setting.
-		3. Bypass menu selection crash.
-		4. Replaced country flags.
-		5. Support for ExtendedInfo forks.
-
-		[B]3.0[/B]
-		1. First Leia version.
-		</news>
-	</extension>
-</addon>
-
 <addon id="skin.estuary.modv2" version="3.0.7~beta02232212" name="Estuary MOD V2 (KODI 18)" provider-name="Guilouz">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
@@ -159,7 +91,70 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.netflix" name="Netflix" version="0.16.2~beta12231044" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
+<addon id="plugin.video.kodiconnect"
+       name="Kodi Connect"
+       version="0.1.22"
+       provider-name="Tomas Kislan">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <!-- <extension point="xbmc.python.script" library="default.py" /> -->
+  <extension point="xbmc.python.pluginsource" library="plugin.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Reverse proxy tunnel to the cloud</summary>
+    <description lang="en">Creates a connection with the cloud server, so that it can be controlled from anywhere</description>
+    <license>GPL 2.0</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=327562</forum>
+    <website></website>
+    <source>https://github.com/kodi-connect/kodi-connect-addon</source>
+    <email>kislan.tomas@gmail.com</email>
+  </extension>
+</addon>
+
+<addon id="plugin.video.amazon"
+       name="Amazon"
+       version="2.0.9~beta12221044"
+       provider-name="Sandmann79 + BlueCop + Romans I XVI">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="script.module.beautifulsoup4" version="4.6.2"/>
+    <import addon="script.module.mechanicalsoup" version="0.12.0"/>
+    <import addon="script.module.amazon.database" version="0.1.1"/>
+    <import addon="script.module.pydes" version="2.0.1"/>
+    <import addon="script.module.pyxbmct" version="1.1.7"/>
+    <import addon="script.module.myconnpy" version="1.1.7"/>
+    <import addon="script.module.inputstreamhelper" version="0.2.4"/>
+    <import addon="script.module.requests" version="2.9.1"/>
+    <import addon="script.module.kodi-six" version="0.0.5"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+             library="default.py">
+	<provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en">Amazon Prime Video Streaming</summary>
+    <summary lang="de">Amazon Prime Instant Video</summary>
+    <description lang="en">Movies and Television Shows for German Prime Members.
+This Addon works only with German Amazon Accounts. For Non-German Accounts use Amazon VOD Addon from my repo.</description>
+    <description lang="de">Filme und Serien für Amazon Prime Mitglieder</description>
+    <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.
+This Addon uses pyDes by Todd Whiteman</disclaimer>
+    <disclaimer lang="de">Möglicherweise sind einge Teile dieses Addons in Ihrem Land illegal, Sie sollten dies unbedingt vor der Installation überprüfen.
+Diese Addon verwendet pyDes von Todd Whiteman</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://www.kodinerds.net/index.php/Thread/44211-Release-Amazon-Prime-Instant-Video</forum>
+    <source>https://github.com/Sandmann79/xbmc</source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.netflix" name="Netflix" version="0.16.4~beta01182017" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
   <requires>
     <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.addon.signals" version="0.0.3"/>
@@ -212,101 +207,94 @@
     <forum>https://forum.kodi.tv/showthread.php?tid=329767</forum>
     <source>https://github.com/CastagnaIT/plugin.video.netflix</source>
     <news>
-v0.16.2~beta12231044 (2019-12-14)
--Allowed to export individual seasons to the library (manual mode)
--Dolby atmos audio streams are now specified (Kodi 19)
--Added workaround to fix skin widgets
--Handled subtitle properties for next version of InputStream Adaptive
--Introduced accurate handling of subtitles (Kodi 19)
--Improved handling of subtitles (Kodi 18)
--Improved return to main page from search dialog
--Improved cancel login dialog after the logout
--Improved timeout on IPC over HTTP
--Fixed an issue that showed the wrong label while browsing movies
--Fixed ParentalControl/Rating GUI on custom skins
--Fixed an issue that cause unicodedecode error on some android devices
--Fixed an issue that can cause unicodedecode error in user/password
--Added japanese language
--Updated kr, hu, pt_br, fr
+v0.16.4~beta01182017 (2020-01-18)
+-Fixed an issue that causing addon freeze on export/update to library
+-Fixed an regression issue that causing http error 401
+-Fixed an issue that causing unicodedecode error at startup
+-Fixed an issue that in some cases prevented the export of a tv show season
+-Generally optimized addon speed
 -Many improvements to the code
 
-v0.16.0 (2019-11-29)
--Added new parental control settings
--Added new thumb rating to movies/tv shows
--Started migrating to watched status marks by profile
--Optimized startup code
--Better handled no internet connection
--Fixed an issue that breaks the service when there is no internet connection
--Fixed an issue in some specific cases request at startup credentials even if already saved
--Fixed an issue did not show any error to the user when the loading of profiles fails
--Fixed an issue that did not allow the display of the skip button in the Kodi library
--New Hungarian language
--Updated de, hr, it, pl, pt_br translations
--Other minor improvements/fixes
+v0.16.2 (2020-01-07)
+-Improved add-on startup
+-Improved loading of profiles list
+-Added in expert setting a choice to speed up service or addon startup
+-Fixed an issue that causing addon misbehaviour using multiple Kodi profiles
+-Fixed an issue that causing addon breakage with sqlite connections
+-Fixed some python 3 issues on Android
+-Handled cases of metadata not available
+-Permanently removed sharing Kodi videos settings between profiles
+-Updated de, es, it translations
+-Minor improvements
     </news>
   </extension>
 </addon>
 
-<addon id="plugin.video.amazon"
-       name="Amazon"
-       version="2.0.9~beta12221044"
-       provider-name="Sandmann79 + BlueCop + Romans I XVI">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-    <import addon="script.module.beautifulsoup4" version="4.6.2"/>
-    <import addon="script.module.mechanicalsoup" version="0.12.0"/>
-    <import addon="script.module.amazon.database" version="0.1.1"/>
-    <import addon="script.module.pydes" version="2.0.1"/>
-    <import addon="script.module.pyxbmct" version="1.1.7"/>
-    <import addon="script.module.myconnpy" version="1.1.7"/>
-    <import addon="script.module.inputstreamhelper" version="0.2.4"/>
-    <import addon="script.module.requests" version="2.9.1"/>
-    <import addon="script.module.kodi-six" version="0.0.5"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-             library="default.py">
-	<provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <reuselanguageinvoker>true</reuselanguageinvoker>
-    <summary lang="en">Amazon Prime Video Streaming</summary>
-    <summary lang="de">Amazon Prime Instant Video</summary>
-    <description lang="en">Movies and Television Shows for German Prime Members.
-This Addon works only with German Amazon Accounts. For Non-German Accounts use Amazon VOD Addon from my repo.</description>
-    <description lang="de">Filme und Serien für Amazon Prime Mitglieder</description>
-    <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.
-This Addon uses pyDes by Todd Whiteman</disclaimer>
-    <disclaimer lang="de">Möglicherweise sind einge Teile dieses Addons in Ihrem Land illegal, Sie sollten dies unbedingt vor der Installation überprüfen.
-Diese Addon verwendet pyDes von Todd Whiteman</disclaimer>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum>http://www.kodinerds.net/index.php/Thread/44211-Release-Amazon-Prime-Instant-Video</forum>
-    <source>https://github.com/Sandmann79/xbmc</source>
-  </extension>
-</addon>
+<addon
+    id="skin.eminence.2.mod"
+    version="3.0.5~beta12231044"
+    name="Eminence 2 MOD"
+    provider-name="jurialmunkey - Mod by Guilouz - Mod by Alanon - Mod by hawkeyexp">
+    <requires>
+        <import addon="xbmc.gui" version="5.14.0"/>
+        <import addon="script.skinshortcuts" version="1.0.13"/>
+        <import addon="script.skin.helper.service" version="1.1.23"/>
+		<import addon="script.skin.helper.widgets" version="1.0.35"/>
+		<import addon="script.skin.helper.colorpicker" version="1.0.12"/>
+        <import addon="script.extendedinfo" version="5.0.0"/>
+        <import addon="script.image.resource.select" version="0.0.5"/>
+        <import addon="plugin.program.autocompletion" version="1.0.1"/>
+    </requires>
+    <extension point="xbmc.gui.skin" effectslowdown="1.00" debugging="false">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Clean, clear, simple, modern.</summary>
+        <summary lang="fr">Clair, simple et moderne.</summary>
+        <description lang="en">Eminence is a skin that aims to be clean, clear, simple and modern.</description>
+        <description lang="fr">Eminence est un thème qui vise à être clair, simple et moderne.</description>
+		<assets>
+		 	<icon>icon.png</icon>
+ 			<fanart>fanart.jpg</fanart>
+			<screenshot>extras/viewthumbs/56.jpg</screenshot>
+ 			<screenshot>extras/viewthumbs/521.jpg</screenshot>
+ 			<screenshot>extras/viewthumbs/600.jpg</screenshot>
+ 			<screenshot>extras/viewthumbs/506.jpg</screenshot>
+ 			<screenshot>extras/viewthumbs/52.jpg</screenshot>
+ 			<screenshot>extras/viewthumbs/159.jpg</screenshot>
+		</assets>
+		<news> Changelog:
 
-<addon id="plugin.video.kodiconnect"
-       name="Kodi Connect"
-       version="0.1.22"
-       provider-name="Tomas Kislan">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-  </requires>
-  <!-- <extension point="xbmc.python.script" library="default.py" /> -->
-  <extension point="xbmc.python.pluginsource" library="plugin.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup"/>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Reverse proxy tunnel to the cloud</summary>
-    <description lang="en">Creates a connection with the cloud server, so that it can be controlled from anywhere</description>
-    <license>GPL 2.0</license>
-    <forum>https://forum.kodi.tv/showthread.php?tid=327562</forum>
-    <website></website>
-    <source>https://github.com/kodi-connect/kodi-connect-addon</source>
-    <email>kislan.tomas@gmail.com</email>
-  </extension>
+		[B]3.0.5~beta12231044[/B]
+		1. Skin Shortcuts menu fix.
+		2. Minor widget fixes.
+		3. Dialog Busy tweak.
+
+		[B]3.0.3[/B]
+		1. GUI bump.
+		2. Tweaked vertical menu layout and size.
+		3. Added addon dependency button.
+		4. Removed Audio DSP related settings.
+		5. Tweaked startup video.
+		6. Premiere date tweaks.
+		7. PVR Recordings fix.
+
+		[B]3.0.2[/B]
+		1. Fixed weather animated icons.
+		2. Alphabet scrollbar fixes.
+		3. Reimplemented Netflix backend fonts.
+
+		[B]3.0.1[/B]
+		1. Small infoline corrections.
+		2. Removed a redundant setting.
+		3. Bypass menu selection crash.
+		4. Replaced country flags.
+		5. Support for ExtendedInfo forks.
+
+		[B]3.0[/B]
+		1. First Leia version.
+		</news>
+	</extension>
 </addon>
 </addons>
