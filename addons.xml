@@ -238,7 +238,7 @@ v1.1.1~beta03202239 (2020-03-20)
 
 <addon
     id="skin.eminence.2.mod"
-    version="3.0.5~beta12231044"
+    version="3.0.5~beta03202256"
     name="Eminence 2 MOD"
     provider-name="jurialmunkey - Mod by Guilouz - Mod by Alanon - Mod by hawkeyexp">
     <requires>
@@ -272,7 +272,7 @@ v1.1.1~beta03202239 (2020-03-20)
 		</assets>
 		<news> Changelog:
 
-		[B]3.0.5~beta12231044[/B]
+		[B]3.0.5~beta03202256[/B]
 		1. Skin Shortcuts menu fix.
 		2. Minor widget fixes.
 		3. Dialog Busy tweak.
