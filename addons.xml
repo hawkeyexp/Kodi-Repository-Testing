@@ -154,7 +154,7 @@ Diese Addon verwendet pyDes von Todd Whiteman</disclaimer>
   </extension>
 </addon>
 
-<addon id="plugin.video.netflix" name="Netflix" version="1.1.1~beta03202239" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
+<addon id="plugin.video.netflix" name="Netflix" version="1.1.1~beta03222355" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
   <requires>
     <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.addon.signals" version="0.0.3"/>
@@ -216,7 +216,7 @@ Diese Addon verwendet pyDes von Todd Whiteman</disclaimer>
     <forum>https://forum.kodi.tv/showthread.php?tid=329767</forum>
     <source>https://github.com/CastagnaIT/plugin.video.netflix</source>
     <news>
-v1.1.1~beta03202239 (2020-03-20)
+v1.1.1~beta03222355 (2020-03-20)
 -Added more supplemental info to plot info
 -Added customizable color to suppl. plot info
 -Added Greek language
